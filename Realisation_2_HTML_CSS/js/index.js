@@ -16,27 +16,22 @@ function showSlides() {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += "active";
     // Change image every 2 seconds
     setTimeout(showSlides, 2000);
 }
 
-// let myUser = JSON.parse(localStorage.getItem('myUser'));
 
-// let btnProfil = document.getElementById("btnProfil");
-// let btnSignIn = document.getElementById("btnSignIn");
+let myUser = JSON.parse(localStorage.getItem('myUser'));
 
-// if (myUser == null) {
-//     btnProfil.style.display = "none";
-//     btnSignIn.style.display = "block";
+let btnProfil = document.getElementById("btnProfil");
+let btnSignIn = document.getElementById("btnSignIn");
 
-// } else {
-//     btnProfil.style.display = "block";
-//     btnSignIn.style.display = "none";
-// }
+if (myUser == null) {
+btnProfil.style.display = "none";
+btnSignIn.style.display = "block";
 
-// btnLogOut.addEventListener("submit", function(event){
-//     event.preventDefault();
-//     localStorage.clear();
-//     location.reload();
-// });
+} else {
+btnProfil.style.display = "block";
+btnSignIn.style.display = "none";
+}

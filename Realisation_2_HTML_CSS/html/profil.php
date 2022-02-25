@@ -17,7 +17,7 @@
     include 'head.html';
     include 'navi.html';
     ?>
-
+    <button class="btn btn-primary" type="submit" id="btnLogOut">Log out</button>
     <?php
     include 'foot.html';
     ?>

@@ -29,7 +29,7 @@ document.getElementById("registerForm").addEventListener("submit", function(e){
                 
                 alert(res.msg);
                 
-                document.location.href="http://localhost/Fil_rouge/Realisation_2_HTML_&_CSS/html/index.php";
+                document.location.href="http://localhost/Realisation_fil_rouge/Realisation_2_HTML_CSS/html/index.php";
             } else {
                 
                 alert(res.msg);
@@ -39,7 +39,7 @@ document.getElementById("registerForm").addEventListener("submit", function(e){
         }
     };
 
-    xhr.open("POST", "http://localhost/Fil_rouge/Realisation_6_Back_end/MVC/controllers/register.php", true);
+    xhr.open("POST", "http://localhost/Realisation_fil_rouge/Realisation_6_Back/MVC/controller/register.php", true);
 
     xhr.send(data);
 

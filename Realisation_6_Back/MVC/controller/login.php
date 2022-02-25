@@ -3,8 +3,8 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST");
 
-include_once('../config/config.php');
-include_once('../models/users.php');
+include_once('../util/config.php');
+include_once('../model/users.php');
 
 $success = 0;
 $msg = "Une erreur est survenue dans le php";
