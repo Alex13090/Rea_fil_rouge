@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand text-success h2" href="http://localhost/Fil_rouge/Realisation_2_HTML_&_CSS/html/index.php">ShopyMe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="#!">Promo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">Meilleurs vente</a></li>
+                <li class="nav-item dropdown">
+                    <div class="input-group">
+                        <div class="input-group-prepend"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">Riz, nouilles & vermicelles</a></li>
+                                <li><a class="dropdown-item" href="#!">Nouilles instantanées</a></li>
+                                <li><a class="dropdown-item" href="#!">Sauces & Assaisonnements</a></li>
+                                <li><a class="dropdown-item" href="#!">Epices & préparations</a></li>
+                                <li><a class="dropdown-item" href="#!">Boissons non alcoolisées</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="input-group">
+                        <input type="text" class="form-control" size="50" aria-label="Text input with dropdown button">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">rechercher</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <form class="d-flex" action="../html/signin.php" method="GET" id="btnSignIn">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi bi-person-x"></i>
+                    Sign in
+                </button>
+            </form>
+            <form class="d-flex" action="../html/profil.php" method="GET" id="btnProfil">
+                <button class="btn btn-outline-primary" type="submit">
+                    <i class="bi bi-person"></i>
+                    Profile
+                </button>
+            </form>
+            <form class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Panier
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>

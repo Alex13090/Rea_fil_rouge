@@ -1,0 +1,112 @@
+header,
+footer {
+  background: linear-gradient(-45deg, #d4c4fd, #a6d3fa, #fcc9cc, #fab3d2);
+  animation: gradientBG 15s ease infinite;
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#header1 h1 a img {
+  height: 10vh;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px grey;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+form div {
+  margin: 20px 0 10px 0;
+}
+
+input {
+  width: 290px;
+  margin: 10px 0 10px 0;
+}
+
+input,
+button {
+  height: 4vh;
+  border-radius: 5px;
+}
+
+button {
+  width: 300px;
+  margin: 10px 0 10px 0;
+  background-color: rgb(127, 246, 255);
+}
+
+button:hover {
+  background-color: rgb(140, 185, 34);
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#joinNow:hover {
+  color: rgb(140, 185, 34);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3vh 0 1vh 0;
+}
+
+footer nav li {
+  margin: 4px;
+}
+
+#copyRight {
+  text-align: center;
+  color: grey;
+  padding-bottom: 1vh;
+}
