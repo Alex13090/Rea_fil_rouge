@@ -28,15 +28,13 @@
         <div class="mySlides fade">
             <img class="img-shadow" src="https://www.ma-grande-taille.com/wp-content/uploads/2021/02/recette-gyoza.jpg" height="500">
         </div>
-        <div class="mySlides fade">
-            <img class="img-shadow" src="https://www.bluedragon.ca/system/recipes/images/000/000/235/original/tom-yum.jpg?1572299956" height="500">
-        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <div class="shadowDot">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
     </div>
 
     <?php
