@@ -1,9 +1,18 @@
 
-let myUser = JSON.parse(localStorage.getItem('myUser'));
+
 let btnLogOut = document.getElementById("btnLogOut");
 
 btnLogOut.addEventListener("submit", function(event){
     event.preventDefault();
-    localStorage.clear();
-    location.reload();
+    if(localStorage){
+        localStorage.clear();
+    }
+    location.href = "http://localhost/Realisation_fil_rouge/Realisation_2_HTML_CSS/html/index.php";
 });
+
+// function logOut(){
+//     if(localStorage){
+//         localStorage.clear();
+//     }
+//     location.href = "http://localhost/Realisation_fil_rouge/Realisation_2_HTML_CSS/html/index.php";
+// }

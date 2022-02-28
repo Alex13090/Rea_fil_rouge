@@ -1,10 +1,10 @@
 
-let myUser = JSON.parse(localStorage.getItem('myUser'));
+let userOk = JSON.parse(localStorage.getItem('myUser'));
 
 let btnProfil = document.getElementById("btnProfil");
 let btnSignIn = document.getElementById("btnSignIn");
 
-if (myUser != null) {
+if (userOk == null) {
 btnProfil.style.display = "none";
 btnSignIn.style.display = "block";
 
